@@ -174,10 +174,10 @@ static void ui_draw_sidebar_panda_metric(UIState *s) {
   } else if (s->started) {
     if (s->scene.satelliteCount < 6) {
       panda_severity = 1;
-      panda_message = "블랙\nGPS 불량";
+      panda_message = "블랙판다\nGPS 미수신";
     } else {
       panda_severity = 0;
-      panda_message = "블랙\nGPS 양호";
+      panda_message = "블랙판다\nGPS 양호";
     }
   }
   ui_draw_sidebar_metric(s, NULL, NULL, panda_severity, panda_y_offset, panda_message.c_str());
