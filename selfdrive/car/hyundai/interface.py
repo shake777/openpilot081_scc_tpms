@@ -131,12 +131,7 @@ class CarInterface(CarInterfaceBase):
 
 
     ret.lateralTuning.init('lqr')
-
-<<<<<<< Updated upstream
-    ret.lateralTuning.lqr.scale = 1800.
-=======
     ret.lateralTuning.lqr.scale = 1860.
->>>>>>> Stashed changes
     ret.lateralTuning.lqr.ki = 0.070
     ret.lateralTuning.lqr.dcGain = 0.002770
 
@@ -147,11 +142,7 @@ class CarInterface(CarInterfaceBase):
     ret.lateralTuning.lqr.l = [0.33, 0.318]
 
     ret.steerRatio = 14.20
-<<<<<<< Updated upstream
-    ret.steerActuatorDelay = 0.240
-=======
     ret.steerActuatorDelay = 0.390
->>>>>>> Stashed changes
     ret.steerLimitTimer = 2.5
 
     ret.steerRateCost = 0.50
