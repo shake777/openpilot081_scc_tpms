@@ -836,8 +836,8 @@ static void bb_ui_draw_debug(UIState *s)
 }
 
 
-
-static void bb_ui_draw_UI(UIState *s) {
+static void bb_ui_draw_UI(UIState *s)
+{
   const UIScene *scene = &s->scene;
   const int bb_dml_w = 180;
   const int bb_dml_x = (scene->viz_rect.x + (bdr_is * 2));
