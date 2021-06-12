@@ -99,8 +99,8 @@ class CarInterface(CarInterfaceBase):
       ret.lateralTuning.lqr.a = [0., 1., -0.22619643, 1.21822268]
       ret.lateralTuning.lqr.b = [-1.92006585e-04, 3.95603032e-05]
       ret.lateralTuning.lqr.c = [1., 0.]
-      ret.lateralTuning.lqr.k = [-110., 451.]
-      ret.lateralTuning.lqr.l = [0.33, 0.318]
+      ret.lateralTuning.lqr.k = [-110.73572306, 451.22718255]
+      ret.lateralTuning.lqr.l = [0.3233671, 0.3185757]
       ret.lateralTuning.lqr.dcGain = DcGain
 
     ret.steerMaxV = [SteerMaxV]
@@ -186,7 +186,7 @@ class CarInterface(CarInterfaceBase):
       ret.mass = 1737. + STD_CARGO_KG
       ret.wheelbase = 2.7
     elif candidate in [CAR.K7, CAR.K7_HEV]:
-      ret.mass = 1680. + STD_CARGO_KG
+      ret.mass = 1580. + STD_CARGO_KG
       ret.wheelbase = 2.855
     elif candidate == CAR.SELTOS:
       ret.mass = 1310. + STD_CARGO_KG
