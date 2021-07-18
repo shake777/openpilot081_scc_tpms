@@ -44,7 +44,7 @@ class CarInterface(CarInterfaceBase):
       if fw.ecu == "eps" and b"," in fw.fwVersion:
         eps_modified = True
 
-    ret.maxSteeringAngleDeg = 120.
+    ret.maxSteeringAngleDeg = 125.
 
     # lateral
     ret.lateralTuning.init('lqr')
@@ -62,9 +62,9 @@ class CarInterface(CarInterfaceBase):
     ret.steerRatio = 17.2
     ret.steerActuatorDelay = 0.80
     ret.steerLimitTimer = 3.0
-    ret.steerRateCost = 0.4
+    ret.steerRateCost = 0.38
     ret.steerMaxBP = [0.]
-    ret.steerMaxV = [2.0]
+    ret.steerMaxV = [1.5]
 
     # longitudinal
     ret.longitudinalTuning.kpBP = [0, 10. * CV.KPH_TO_MS, 20. * CV.KPH_TO_MS, 40. * CV.KPH_TO_MS, 70. * CV.KPH_TO_MS, 100. * CV.KPH_TO_MS, 130. * CV.KPH_TO_MS]
@@ -229,7 +229,7 @@ class CarInterface(CarInterfaceBase):
       ret.centerToFront = ret.wheelbase * 0.4
     elif candidate in [CAR.K7, CAR.K7_HEV]:
       tire_stiffness_factor = 0.7
-      ret.mass = 1650. + STD_CARGO_KG
+      ret.mass = 1580. + STD_CARGO_KG
       ret.wheelbase = 2.855
       ret.centerToFront = ret.wheelbase * 0.4
     elif candidate == CAR.SELTOS:
